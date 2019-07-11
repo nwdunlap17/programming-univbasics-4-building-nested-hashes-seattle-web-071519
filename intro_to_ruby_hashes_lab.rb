@@ -7,8 +7,8 @@ end
 def monopoly_with_second_tier
 	array = monopoly
 	array[:railroads][:pieces] = 4
-	array[:railroads][:rent_in_dollars] = {}
 	array[:railroads][:names] = {}
+	array[:railroads][:rent_in_dollars] = {}
 	return array
 end
 
