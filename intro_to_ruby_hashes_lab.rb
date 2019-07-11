@@ -9,6 +9,7 @@ def monopoly_with_second_tier
 	array[:pieces] = 4
 	array[:rent_in_dolors] = {}
 	array[:names] = {}
+	return array
 end
 
 def monopoly_with_third_tier
