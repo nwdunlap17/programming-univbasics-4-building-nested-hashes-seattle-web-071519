@@ -16,7 +16,7 @@ describe "Building a Nested Monopoly Hash" do
 
   describe "Adding Key/Value Pairs in the Second Level" do
     describe "monopoly_with_second_tier" do
-      it "sets the first key of the :railroads hash to a symbol, :pieces, whose value is an integer, 4" do
+      it "PART1sets the first key of the :railroads hash to a symbol, :pieces, whose value is an integer, 4" do
         # the goal of this part of the lab is to have you build the multidimentional monopoly hash in sequential order
         # hence the solution to this (and the rest of the tests in this lab) builds on top of each other.
 
@@ -24,12 +24,12 @@ describe "Building a Nested Monopoly Hash" do
         expect(monopoly_with_second_tier.values[0].keys[0]).to eq(:pieces)
       end
 
-      it "sets the second key of the :railroads hash to a symbol, :names, whose value is an empty hash" do
+      it "PART2sets the second key of the :railroads hash to a symbol, :names, whose value is an empty hash" do
 
         expect(monopoly_with_second_tier[:railroads][:names]).to eq({})
       end
 
-      it "sets the third key of the :railroads hash to a symbol, :rent_in_dollars, whose value is an empty hash " do
+      it "PART3sets the third key of the :railroads hash to a symbol, :rent_in_dollars, whose value is an empty hash " do
 
         expect(monopoly_with_second_tier[:railroads][:rent_in_dollars]).to eq({})
         expect(monopoly_with_second_tier.values[0].keys).to eq([:pieces, :names, :rent_in_dollars])
